@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Splash&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/beer.png" type="image/x-icon">
+    <title>Alta Pinta</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="box-1">
+                <nav>
+                    <div class="lista">
+                        <a href="#">Nosotros</a>
+                        <a href="#cervezas">Cervezas</a>
+                        <a href="#picadas">Picadas</a>
+                    </div>
+                </nav>
+                <div class="centro">
+                    <a  href="#">Alta Pinta</a>
+                </div>
+                <nav>
+                    <div class="lista">
+                        <a href="#locales">Locales</a>
+                        <a href="#galeria">Galeria</a>
+                        <a href="#reservas">Reservas</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section id="nosotros">
+            <div class="box-2">
+                <div>
+                    <h1 id="nosotros">Conoce Alta Pinta</h1>
+                    <h5>Cerveceria Artesanal</h5>
+                    <p>Esta idea surge del proyecto de tres compañeros que un dia decidieron intentar nuevos tipos de
+                        cervezas. Y
+                        tras mucha investigacion, recorrido, estudio y testeo dieron con estos gustos, sabores y mezclas
+                        tan
+                        particulares que hoy representan a Alta Pinta. Te invitamos a que participes de esta aventura...
+                    </p>
+                    <a href="#reservas" role="button">Hace tu reserva</a>
+                </div>
+            </div>
+        </section>
+        <section id="cervezas">
+            <div class="tarjetas">
+                <h2>Nuestras cervezas</h2>
+                <div>
+                    <div class="box5" id="app">
+                        <div v-for="elemento in cervezas" class="card">
+                            <img width="198" height="150" :src="elemento.imagen" :alt="elemento.name">
+
+                            <h3>{{elemento.nombre}}</h3><br>
+                            <p>{{elemento.Alcohol}}</p>
+                            <p>{{elemento.Sabor}}</p>
+                            <p>{{elemento.Tipo}}</p>
+                        </div>
+
+                    </div>
+
+                </div>
+        </section>
+        <section id="picadas">
+            <h2>Nuestras Picadas</h2>
+            <div class="box7">
+                <div class="card1">
+                    <img src="/img/Picada1.jpg" alt="imagen_de_una_picada">
+                    <div class="textopicada">
+                        <h3>Picada Veggie</h3> <br>
+                        <p>Queso Pategras, Gouda y Azul. Manzana verde laminada, dátiles, uvas de estación, tomates
+                            secos,
+                            cherrys, almendras, aceitunas verdes y negras.
+                            <br><br>
+                            Además esta acompañada por escabeche casero de vegetales, trio de hummus, que incluye
+                            hummus
+                            de
+                            garbanzo, hummus de pimiento asado y hummus de zanahoria.
+                    </div>
+
+                </div>
+                <div class="card1">
+                    <img src="/img/Picada2.jpg" alt="imagen_de_unas_picada">
+                    <div class="textopicada">
+                        <h3>Picada El Negro</h3><br>
+                        <p>Es una Tabla exclusiva de los mejores fiambres y embutidos. Incluye:
+                            Jamón Crudo, Bondiola de Cerdo, Salame Picado Grueso, Jamón Cocido, Mortadela con
+                            pistachos,
+                            Patrón Casero, Lomito Ahumado y Leberwurst.
+                            <br><br>
+                            Además contiene tomatitos cherry, Aceitunas Verdes, Hummus de Garbanzo, Pepinos Alemanes
+                            Encurtidos y Variedad de Panificación.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="/img/Picada3.png" alt="otra_imagen_de_una_picada">
+                    <div>
+                        <h3>Picada Fontanarrosa</h3><br>
+                        <p>Es una Tabla exclusiva de quesos seleccionados:
+                            Gouda, Holanda, Azul, Sardo, Ahumado, Pategras, Brie, Boconccinos y Sardo Premium.
+                            <br><br>
+                            Además, incluye; almendras, tomatitos cherry, tomates secos, hummus de pimiento asado,
+                            aceitunas
+                            verdes y Pepinos Alemanes Encurtidos. Variedad de panificación.
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="card1">
+                    <img src="/img/Picada4.png" alt="otra_imagen_de_una_picada">
+                    <div class="textopicada">
+                        <h3>Picada La Florida</h3><br>
+                        <p>Es una tabla variada, una combinación exquisita, que incluye jamón cocido, jamón crudo,
+                            lomito
+                            ahumado, salame picado grueso, pastron casero.
+                            <br><br>
+                            Además incluye tomatitos cherry, Aceitunas Verdes, Pepinos alemanes encurtidos, hummus
+                            de
+                            garbanzo. Variedad de panificación.
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="locales">
+            <div class="sucursales">
+                <h3>Donde nos encontramos</h3>
+                <p>Av. Cordoba 5600, CABA</p>
+                <div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.1623204921598!2d-58.440864130418426!3d-34.58773979423475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5f333305a0f%3A0x99fbc573993e866a!2sKIF%20Birrer%C3%ADa!5e0!3m2!1ses-419!2sar!4v1684065595341!5m2!1ses-419!2sar"
+                        width="400" height="300" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+        <section id="galeria">
+            <div class="fotos-clientes">
+                <h3>Galeria</h3>
+                <div class="galeria1">
+                    <img src="./img/brindis-con-cerveza.jpg" alt="">
+                    <img src="./img/pasandola-bien.jpg" alt="">
+                    <img src="./img/baramigos.jpg" alt="">
+                    <img src="./img/brindis-cervecero.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="reservas">
+            <div class="form">
+                <h3>Hace tu reserva</h3>
+                <form action="" class="formulario" id="formulario">
+                    <div class="fgr" id="grnombre">
+                        <label for="nombre" class="flabel">Nombre</label>
+                        <div class="fgr-input">
+                            <input type="text" class="finput" name="nombre" id="nombre"
+                                placeholder="Juan">
+                            <i class="fvalidacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="finput-error">El nombre solo puede contener letras, el campo no puede quedar vacio</p>
+                    </div>
+                    <div class="fgrupo" id="grapellido">
+                        <label for="apellido" class="flabel">Apellido</label>
+                        <div class="fgr-input">
+                            <input type="text" class="finput" name="apellido" id="apellido"
+                                placeholder="Garcia">
+                            <i class="fvalidacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="finput-error">El apellido solo puede contener letras, el campo no puede quedar vacio</p>
+                    </div>
+                    <div class="fgrupo" id="grtelefono">
+                        <label for="telefono" class="flabel">Teléfono</label>
+                        <div class="fgr-input">
+                            <input type="text" class="finput" name="telefono" id="telefono"
+                                placeholder="1123456789">
+                            <i class="fvalidacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="finput-error">El telefono solo puede contener numeros, el maximo son 14
+                            dígitos, el campo no puede quedar vacio.</p>
+                    </div>
+                    <div class="fmensaje" id="fmensaje">
+                        <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                    </div>
+        
+                    <div class="fgr fgr-btn-enviar">
+                        <button type="submit" class="fbtn">Enviar</button>
+                        <p class="fmensaje-exito" id="fmensaje-exito">Formulario enviado exitosamente!</p>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer class="box-12">
+            <div>
+                <nav>
+                    <p>Av. Cordoba 5600, CABA</p><!--telefono-->
+                    <a href="tel:++54-9-11-1111-0000"><img src="./img/phone-call.png"
+                            alt="telefono logo"></a><!--telefono-->
+                    <a href="https://api.whatsapp.com/send/?phone=549111110000&text&type=phone_number&app_absent=0"
+                        target="_blank"><img src="./img/whatsapp.png" alt="whatsapp logo"></a><!--red social-->
+                    <a href="https://www.instagram.com/alta_pinta_cerveceria/" target="_blank"><img
+                            src="./img/instagram.png" alt="instagram logo"></a><!--red social-->
+                    <a href="https://www.facebook.com/altapintacerveceria.net" target="_blank"><img
+                            src="./img/facebook.png" alt="facebook logo"></a><!--red social-->
+                    <a href="mailto:altapinta@gmail.com"><img src="./img/email.png"
+                            alt="email logo"></a><!--mail de alta pinta-->
+                    <p>Sitio realizado por <span> <b> Gregoiri & algo_de_luz </b> </span> de Codo a Codo - Comision
+                        23020</p>
+                </nav>
+            </div>
+        </footer>
+        <button onclick="scrollToTop()" id="myBtn" title="Go to top">↑</button>
+        
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="json.json"></script>
+        <script src="JS/boton.js"></script>
+        <script src="./JS/cerveza.js"></script>
+        <script src="./JS/validacion.js"></script>
+        
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    </div>
+</body>
+
+</html>
