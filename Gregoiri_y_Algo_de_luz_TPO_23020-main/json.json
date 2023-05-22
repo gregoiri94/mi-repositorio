@@ -1,0 +1,61 @@
+{
+    "cervezas": [
+      {
+        "imagen": "./img/Cerveza1.jpg",
+        "nombre": "Cerveza IPA",
+        "Alcohol": "Alcohol: 5,5%",
+        "Sabor": "Sabor: amargo",
+        "Tipo": "Cerveza fuerte"
+      },
+      {
+        "imagen": "./img/Cerveza2.jpg",
+        "nombre": "Cerveza APA",
+        "Alcohol": "Alcohol: 4,5%",
+        "Sabor": "Sabor: amrgo",
+        "Tipo": "Cerveza rubia"
+      },
+      {
+        "imagen": "./img/Cerveza3.jpg",
+        "nombre": "Cerveza HONEY",
+        "Alcohol": "Alcohol: 2,5%",
+        "Sabor": "Sabor: dulce",
+        "Tipo": "Cerveza rubia"
+      },
+      {
+        "imagen": "./img/Cerveza4.jpg",
+        "nombre": "Cerveza GOLDEN",
+        "Alcohol": "Alcohol: 3,5%",
+        "Sabor": "Sabor: dulce",
+        "Tipo": "Cerveza rubia"
+      },
+      {
+        "imagen": "./img/Cerveza5.webp",
+        "nombre": "Cerveza STOUT",
+        "Alcohol": "Alcohol: 4,5%",
+        "Sabor": "Sabor: semi-amargo",
+        "Tipo": "Cerveza negra"
+      },
+      {
+        "imagen": "./img/Cerveza6.png",
+        "nombre": "Cerveza PORTER",
+        "Alcohol": "Alcohol: 5,5%",
+        "Sabor": "Sabor: amargo",
+        "Tipo": "Cerveza Negra"
+      },
+      {
+        "imagen": "./img/Cerveza7.jpg",
+        "nombre": "Cerveza BOCK",
+        "Alcohol": "Alcohol: 4%",
+        "Sabor": "Sabor: dulce",
+        "Tipo": "Cerveza Roja"
+      },
+      {
+        "imagen": "./img/Cerveza8.jpg",
+        "nombre": "Cerveza ROUCH",
+        "Alcohol": "Alcohol: 3,5%",
+        "Sabor": "Sabor: dulce", 
+        "Tipo": "Cerveza Roja"
+      }
+    ]
+  }
+  
